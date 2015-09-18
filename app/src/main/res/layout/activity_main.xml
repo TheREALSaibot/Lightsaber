@@ -5,6 +5,11 @@
                 tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
+        android:text="Star Wars"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#FFFFFF"
         android:background="@drawable/lightsaber"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>

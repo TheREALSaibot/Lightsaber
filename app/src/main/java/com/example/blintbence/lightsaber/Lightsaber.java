@@ -7,17 +7,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity
+public class Lightsaber extends AppCompatActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lightsaber);
 
-        TextView myTextView = (TextView) findViewById(R.id.title);
-        Typeface typeFace = Typeface.createFromAsset(getAssets(), "fonts/Starjhol.ttf");
+        TextView myTextView=(TextView)findViewById(R.id.title);
+        Typeface typeFace= Typeface.createFromAsset(getAssets(), "fonts/starjedi.ttf");
         myTextView.setTypeface(typeFace);
     }
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_lightsaber, menu);
         return true;
     }
 
