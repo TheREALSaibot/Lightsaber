@@ -1,15 +1,20 @@
 package com.example.blintbence.lightsaber;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
+    private ImageView bla;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,6 +25,34 @@ public class MainActivity extends AppCompatActivity
         TextView myTextView = (TextView) findViewById(R.id.title);
         Typeface typeFace = Typeface.createFromAsset(getAssets(), "fonts/Starjhol.ttf");
         myTextView.setTypeface(typeFace);
+
+        bla = (ImageView) findViewById(R.id.deathstar);
+
+        bla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Lightsaber.class);
+                startActivity(intent);
+            }
+        });
+
+        bla = (ImageView) findViewById(R.id.darthvader);
+        bla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Compass.class);
+                startActivity(intent);
+            }
+        });
+
+        bla = (ImageView) findViewById(R.id.r2d2);
+        bla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, R2d2.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
