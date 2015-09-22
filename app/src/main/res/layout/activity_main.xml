@@ -46,6 +46,7 @@
             </TableRow>
             <TableRow>
                 <ImageView
+                    android:id="@+id/ls"
                     android:background="@drawable/lsaberwhite"
                     android:layout_height="100dp"
                     android:layout_width="100dp"

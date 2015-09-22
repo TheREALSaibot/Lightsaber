@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity
 {
     private ImageView bla;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -50,6 +49,17 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, R2d2.class);
+                startActivity(intent);
+            }
+        });
+
+        bla = (ImageView) findViewById(R.id.ls);
+        bla.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, Lightsaber.class);
                 startActivity(intent);
             }
         });
