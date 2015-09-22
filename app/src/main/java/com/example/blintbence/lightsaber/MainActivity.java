@@ -26,11 +26,10 @@ public class MainActivity extends AppCompatActivity
         myTextView.setTypeface(typeFace);
 
         bla = (ImageView) findViewById(R.id.deathstar);
-
         bla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Lightsaber.class);
+                Intent intent = new Intent(MainActivity.this, Geiger.class);
                 startActivity(intent);
             }
         });

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.blintbence.lightsaber" >
+
     <uses-feature android:name="android.hardware.screen.portrait" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +30,10 @@
         <activity
             android:name=".R2d2"
             android:label="@string/title_activity_r2d2" >
+        </activity>
+        <activity
+            android:name=".Geiger"
+            android:label="@string/title_activity_geiger" >
         </activity>
     </application>
 
